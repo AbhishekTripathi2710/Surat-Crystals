@@ -76,6 +76,7 @@ function Hero() {
   </div>
   );
 }
+
 // Products Component
 const products = [
   {
@@ -182,7 +183,7 @@ function Testimonial() {
         alt="Reviewer"
         className="w-16 h-16 rounded-full border-2 border-orange-500"
       />
-      <p className="mt-4 text-lg font-semibold">Jane Warren</p>
+      <p className="mt-4 text-lg font-semibold">Arpita Roy</p>
     </div>
   </div>
 </div>
@@ -193,7 +194,6 @@ function Testimonial() {
 function Footer() {
   return (
     <footer className="bg-black text-white">
-      {/* Features Section */}
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="text-center">
           <div className="flex justify-center mb-4">
@@ -226,16 +226,13 @@ function Footer() {
         </div>
       </div>
 
-      {/* Navigation Section */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            {/* Logo */}
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold">Surat Crystals</span>
             </div>
 
-            {/* Navigation */}
             <nav>
               <ul className="flex gap-6">
                 <li><button className="text-orange-500 hover:text-orange-400">HOME</button></li>
@@ -247,7 +244,6 @@ function Footer() {
               </ul>
             </nav>
 
-            {/* Social Media */}
             <div className="flex gap-4">
               <button className="hover:text-orange-400"><Facebook className="w-6 h-6" /></button>
               <button className="hover:text-orange-400"><Twitter className="w-6 h-6" /></button>
@@ -258,14 +254,12 @@ function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="border-t border-gray-800">
         <div className="container mx-auto px-4 py-6 text-center text-gray-400">
           <p>Copyright © 2024 Surat Crystals | Powered by Surat Crystals</p>
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
       <button 
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-4 right-4 bg-orange-500 p-2 rounded-full hover:bg-orange-600 transition-colors"
